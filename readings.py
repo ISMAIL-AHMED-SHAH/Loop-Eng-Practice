@@ -10,4 +10,4 @@ def highest(readings):
 
 def lowest(readings):
     """The lowest altitude in the list..."""
-    return min(readings)
+    return max(readings)
