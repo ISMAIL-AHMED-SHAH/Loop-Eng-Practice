@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismail Ahmed — Yard Planner, KICT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="#hero">ISMAIL AHMED</a>
+    <div class="routes">
+      <a href="#about">About</a>
+      <a href="#projects">Roles</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Yard Planner — KICT — since 2016</p>
+        <h1>ISMAIL AHMED</h1>
+        <p class="lede">Yard Planner at KICT, keeping Karachi's container terminal moving since 2016.</p>
+        <p class="sub">Container terminal operations and logistics professional.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="prose">Ismail works as Yard Planner at Karachi International Container Terminal
+      (KICT), a role he has held since June 2016, coordinating daily container yard operations
+      and inventory. His path there ran through pharmaceutical sales and marketing,
+      computer-based yard operations at a second container terminal, and retail — different
+      industries, but each one asking for the same instinct for keeping a moving inventory in
+      order. That instinct is what shows up now in how he assigns containers to their place in
+      the yard and tracks them as they move through it.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Roles — the yard, by slot</h2>
+      <p class="section-note">Ordered by standing, not by date: the current assignment first, then the ones that led to it.</p>
+      <div class="slots">
+
+        <article class="slot reveal">
+          <p class="slot-tag">SLOT 01</p>
+          <h3>Container Yard Planning at KICT</h3>
+          <p class="prose">As Yard Planner at Karachi International Container Terminal, I plan
+          where each container sits in the yard and how it moves from there — coordinating
+          logistics and container inventory so nothing gets buried behind something it needs to
+          leave before. I've held this role since June 2016, and it's the daily work everything
+          else on this page grew out of.</p>
+        </article>
+
+        <article class="slot reveal">
+          <p class="slot-tag">SLOT 02</p>
+          <h3>Pharmaceutical Sales &amp; Marketing at Pharmatec</h3>
+          <p class="prose">I spent five years at Pharmatec Pvt Ltd, starting as a Sales &amp;
+          Marketing Executive and moving up to Assistant Area Manager. The work covered market
+          expansion and team leadership in the pharmaceutical sector — a different industry
+          from container terminals, but it's where the habit of thinking in systems, not single
+          transactions, started.</p>
+        </article>
+
+        <article class="slot reveal">
+          <p class="slot-tag">SLOT 03</p>
+          <h3>Container Terminal Operations at Sea Span</h3>
+          <p class="prose">At Sea Span Container Terminal I worked as a computer operator,
+          managing empty container yard operations and coordinating inventory tracking and
+          logistics for container handling. It's close in spirit to what I do now at KICT —
+          keeping track of where things are and where they need to go next — but from behind a
+          screen rather than out on the yard floor.</p>
+        </article>
+
+        <article class="slot reveal">
+          <p class="slot-tag">SLOT 04</p>
+          <h3>Retail Operations at ALCHEMIST Medical &amp; General Store</h3>
+          <p class="prose">For five years I worked in retail at ALCHEMIST Medical &amp; General
+          Store, as a salesperson handling customer engagement and inventory across medical and
+          general merchandise. It taught me the ground-level version of what I do now: knowing
+          what's on the shelf, what's about to run out, and what a customer actually needs
+          before they finish asking.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Microsoft Office (Word, Excel, PowerPoint, Outlook)</li>
+        <li>Email and communication</li>
+        <li>Typing (45 wpm)</li>
+        <li>Languages: English, Urdu, Pashto</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="lead-in">Reach out by email — Karachi, Pakistan.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:ismailahmedshahpk@gmail.com">ismailahmedshahpk@gmail.com</a></li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = [].slice.call(document.querySelectorAll('.reveal'));
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (e) { e.classList.add('in'); });
+      return;
+    }
+    var ro = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    els.forEach(function (e) { ro.observe(e); });
+  })();
+  </script>
+
+</body>
+</html>
